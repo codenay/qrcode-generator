@@ -18,3 +18,9 @@ genBtn.addEventListener('click', () => {
    
 })
 
+inputField.addEventListener('keyup', () => {
+    if(!inputField.value){
+        qrImage.classList.add('hidden');
+        downloadBtn.classList.add('hidden');
+    }
+})
