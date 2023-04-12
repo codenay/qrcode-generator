@@ -15,5 +15,5 @@ To generate a QR code, simply enter the data you want to encode in the input fie
 
 ## **Browser support**
 
-QRator is supported on all modern browsers, including Chrome, Firefox, Safari, Edge, and Internet Explorer 11.
+QRator is supported on all modern browsers, including Chrome, Firefox, Safari and Edge.
 
