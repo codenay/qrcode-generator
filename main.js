@@ -2,6 +2,7 @@ const genBtn = document.querySelector("#generate-btn");
 const qrImage = document.querySelector('.qr-image');
 const inputField = document.querySelector('.input-field');
 const downloadBtn = document.querySelector('.download-btn');
+const pasteBtn = document.querySelector('.paste');
 
 
 genBtn.addEventListener('click', () => {
@@ -23,4 +24,9 @@ inputField.addEventListener('keyup', () => {
         qrImage.classList.add('hidden');
         downloadBtn.classList.add('hidden');
     }
+})
+
+pasteBtn.addEventListener('click', async () =>{
+        const READ = await navigator.clipboard.readText()
+        inputField.value = READ
 })
